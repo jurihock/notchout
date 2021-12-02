@@ -1,5 +1,7 @@
 .*/
 *.py[cod]
 
+notchout.png
+
 .DS_Store
 Thumbs.db

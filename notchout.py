@@ -1,3 +1,11 @@
+__help__ = \
+'''
+Notchout is a simple Python script which generates a solid color wallpaper image with a mysterious black bar on the top of it.
+
+e.g. python notchout.py -c #C0FFEE ~/Pictures/Wallpaper.png
+'''
+
+
 import AppKit
 
 import PIL
@@ -36,8 +44,8 @@ def save(image, path):
     PIL.Image.fromarray(image, 'RGB').save(path)
 
 
-@click.command(help=None)
-@click.argument('path', default='~/Pictures/notchout.png')
+@click.command(help=__help__)
+@click.argument('path', default='notchout.png')
 @click.option('-s', '--screen', default=1, help='Screen index for auto image size detection. (1)')
 @click.option('-w', '--width', default=0,  help='Image width.  (auto)')
 @click.option('-h', '--height', default=0, help='Image height. (auto)')

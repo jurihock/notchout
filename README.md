@@ -1,9 +1,12 @@
 # notchout
 
-Notchout is a simple Python script which generates a solid color wallpaper with a black bar on the top of it.
-
 ```
 Usage: notchout.py [OPTIONS] [PATH]
+
+  Notchout is a simple Python script which generates a solid color wallpaper
+  image with a mysterious black bar on the top of it.
+
+  e.g. python notchout.py -c #C0FFEE ~/Pictures/Wallpaper.png
 
 Options:
   -s, --screen INTEGER  Screen index for auto image size detection. (1)
